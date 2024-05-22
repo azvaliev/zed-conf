@@ -31,7 +31,8 @@
     "use_system_clipboard": "always"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
+    "git_status": false
   },
   "tab_size": 2,
   "preview_tabs": {
