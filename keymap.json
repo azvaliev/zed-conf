@@ -1,0 +1,43 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+      // LSP stuff
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic",
+      "g d": "editor::GoToDefinition",
+      "g o:": "editor::GoToTypeDefinition",
+      "g r": "editor::FindAllReferences",
+      "g i": "editor::GoToImplementation",
+      "space r n": "editor::Rename",
+      "space f a": "editor::Format",
+      "space a": "editor::ToggleCodeActions",
+      // File browsing
+      "space p v": "project_panel::ToggleFocus",
+      "space f f": "file_finder::Toggle",
+      "space l g": "pane::DeploySearch",
+      // Managing tabs
+      "space b c": "pane::CloseActiveItem",
+      "space t n": "workspace::NewFile",
+      "space t o": "pane::CloseInactiveItems"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // normal mode only
+      // This makes "x" just delete the character the cursor is on, in normal made
+      "x": ["workspace::SendKeystrokes", "ctrl-v x"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown",
+      "x": "editor::Cut"
+    }
+  }
+]
