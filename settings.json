@@ -10,6 +10,7 @@
   "features": {
     "inline_completions": false
   },
+  "buffer_font_family": "SFMono Nerd Font Mono",
   "auto_install_extensions": {
     "html": true,
     "sql": true,
