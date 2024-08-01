@@ -3,6 +3,9 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
+      // undo/redo
+      "u": "vim::Undo",
+      "U": "vim::Redo",
       // LSP stuff
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
