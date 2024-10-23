@@ -15,7 +15,7 @@
       "g i": "editor::GoToImplementation",
       "space r n": "editor::Rename",
       "space f a": "editor::Format",
-      "space a": "editor::ToggleCodeActions",
+      "space c a": "editor::ToggleCodeActions",
       // File browsing
       "space p v": "project_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
