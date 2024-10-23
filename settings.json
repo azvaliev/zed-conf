@@ -17,7 +17,7 @@
     "templ": true,
     "poimandres": true
   },
-  "theme": "poimandres",
+  "theme": "poimandres (no italics)",
   "telemetry": {
     "diagnostics": false
   },
@@ -53,16 +53,64 @@
   "git": {
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 2000
+      "delay_ms": 4000
+    }
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "javascript": {
+          "tsserver": {
+            "maxTsServerMemory": 16184
+          }
+        },
+        "typescript": {
+          "tsserver": {
+            "maxTsServerMemory": 16184
+          },
+          "inlayHints": {
+            "parameterNames": {
+              "enabled": "all",
+              "suppressWhenArgumentMatchesName": false
+            },
+            "parameterTypes": {
+              "enabled": false
+            },
+            "variableTypes": {
+              "enabled": false,
+              "suppressWhenTypeMatchesName": true
+            },
+            "propertyDeclarationTypes": {
+              "enabled": true
+            },
+            "functionLikeReturnTypes": {
+              "enabled": false
+            },
+            "enumMemberValues": {
+              "enabled": true
+            }
+          },
+          "preferences": {
+            "autoImportFileExcludePatterns": [
+              "node_modules/**/dist/**/*.ts",
+              "**/dist/**",
+              "**/build/**",
+              "**/out/**",
+              "**/*.test.ts",
+              "**/*.spec.ts"
+            ],
+            "includeCompletionsForModuleExports": false,
+            "includePackageJsonAutoImports": "off",
+            "preferTypeOnlyAutoImports": true
+          }
+        }
+      }
     }
   },
   "languages": {
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      },
-      "inlay_hints": {
-        "enabled": false
       }
     },
     "TSX": {
