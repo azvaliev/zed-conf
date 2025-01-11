@@ -16,9 +16,11 @@
       "space r n": "editor::Rename",
       "space f a": "editor::Format",
       "space c a": "editor::ToggleCodeActions",
-      // File browsing
+      "space t t": "diagnostics::Deploy",
+      // Other windows
       "space p v": "project_panel::ToggleFocus",
-      "space p c": "workspace::ToggleRightDock",
+      "space c v": "collab_panel::ToggleFocus",
+      "space p c": "workspace::CloseAllDocks",
       "space f f": "file_finder::Toggle",
       "space l g": "pane::DeploySearch",
       "space o r": "projects::OpenRecent",
