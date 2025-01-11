@@ -23,7 +23,11 @@
       // Managing tabs
       "space b c": "pane::CloseActiveItem",
       "space t n": "workspace::NewFile",
-      "space t o": "pane::CloseInactiveItems"
+      "space t o": "pane::CloseInactiveItems",
+      // Terminal
+      "ctrl-t": "workspace::NewCenterTerminal",
+      // DBUI
+      "space d b": ["task::Spawn", { "task_name": "Open DBUI" }]
     }
   },
   {
@@ -48,6 +52,13 @@
       "x": "editor::Cut",
       // Replace selection with paste, without copying the replaced content to clipboard
       "space p": ["workspace::SendKeystrokes", "\" _ d h p"]
+    }
+  },
+  // Markdown preview
+  {
+    "context": "Editor",
+    "bindings": {
+      "space m d": "markdown::OpenPreviewToTheSide"
     }
   }
 ]
