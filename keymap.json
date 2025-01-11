@@ -18,6 +18,7 @@
       "space c a": "editor::ToggleCodeActions",
       // File browsing
       "space p v": "project_panel::ToggleFocus",
+      "space p c": "workspace::ToggleRightDock",
       "space f f": "file_finder::Toggle",
       "space l g": "pane::DeploySearch",
       "space o r": "projects::OpenRecent",
@@ -60,6 +61,13 @@
     "context": "Editor",
     "bindings": {
       "space m d": "markdown::OpenPreviewToTheSide"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      // Close project panel on escape
+      "escape": "workspace::ToggleRightDock"
     }
   }
 ]
