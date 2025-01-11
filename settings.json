@@ -17,7 +17,7 @@
     "templ": true,
     "poimandres": true
   },
-  "theme": "poimandres (no italics)",
+  "theme": "JetBrains New Dark",
   "telemetry": {
     "diagnostics": false
   },
@@ -29,6 +29,7 @@
     "show": "never"
   },
   "vertical_scroll_margin": 10,
+  "use_smartcase_search": true,
   "vim": {
     "use_multiline_find": true,
     "use_smartcase_find": true,

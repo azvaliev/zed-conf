@@ -31,7 +31,12 @@
     "bindings": {
       // normal mode only
       // This makes "x" just delete the character the cursor is on, in normal made
-      "x": ["workspace::SendKeystrokes", "ctrl-v x"]
+      "x": ["workspace::SendKeystrokes", "ctrl-v x"],
+      // Make it so jumping to next match centers on screen
+      "fn-1": "vim::MoveToNextMatch",
+      "fn-2": "vim::MoveToPrevMatch",
+      "n": ["workspace::SendKeystrokes", "fn-1 z z z"],
+      "N": ["workspace::SendKeystrokes", "fn-2 z z z"]
     }
   },
   {
@@ -40,7 +45,9 @@
       // visual, visual line & visual block modes
       "K": "editor::MoveLineUp",
       "J": "editor::MoveLineDown",
-      "x": "editor::Cut"
+      "x": "editor::Cut",
+      // Replace selection with paste, without copying the replaced content to clipboard
+      "space p": ["workspace::SendKeystrokes", "\" _ d h p"]
     }
   }
 ]
