@@ -44,7 +44,9 @@
       "fn-1": "vim::MoveToNextMatch",
       "fn-2": "vim::MoveToPrevMatch",
       "n": ["workspace::SendKeystrokes", "fn-1 z z z"],
-      "N": ["workspace::SendKeystrokes", "fn-2 z z z"]
+      "N": ["workspace::SendKeystrokes", "fn-2 z z z"],
+      // Open a vertical split
+      "|": "pane::SplitRight"
     }
   },
   {
@@ -60,7 +62,7 @@
   },
   // Markdown preview
   {
-    "context": "Editor",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space m d": "markdown::OpenPreviewToTheSide"
     }
