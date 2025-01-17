@@ -59,6 +59,12 @@
   },
   "lsp": {
     "vtsls": {
+      "experimental": {
+        "completion": {
+          "enableServerSideFuzzyMatch": true,
+          "entriesLimit": 100
+        }
+      },
       "settings": {
         "javascript": {
           "tsserver": {
@@ -93,8 +99,6 @@
           },
           "preferences": {
             "autoImportFileExcludePatterns": [
-              "node_modules/**/dist/**/*.ts",
-              "**/dist/**",
               "**/build/**",
               "**/out/**",
               "**/*.test.ts",
