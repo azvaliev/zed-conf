@@ -117,6 +117,10 @@
           "format": {
             "singleQuote": true
           },
+          "customTags": [
+            // For gitlab
+            "!reference sequence"
+          ],
           "schemas": {
             "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/refs/heads/main/schemas/v3.1/schema.yaml": [
               "openapi*.yml",
