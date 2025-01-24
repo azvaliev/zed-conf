@@ -17,7 +17,7 @@
     "templ": true,
     "poimandres": true
   },
-  "theme": "JetBrains New Dark",
+  "theme": "poimandres",
   "telemetry": {
     "diagnostics": false
   },
@@ -107,6 +107,25 @@
             "includeCompletionsForModuleExports": false,
             "includePackageJsonAutoImports": "off",
             "preferTypeOnlyAutoImports": true
+          }
+        }
+      }
+    },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "format": {
+            "singleQuote": true
+          },
+          "schemas": {
+            "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/refs/heads/main/schemas/v3.1/schema.yaml": [
+              "openapi*.yml",
+              "openapi*.yaml"
+            ],
+            "https://raw.githubusercontent.com/compose-spec/compose-spec/refs/heads/main/schema/compose-spec.json": [
+              "docker-compose*.yml",
+              "docker-compose*.yaml"
+            ]
           }
         }
       }
