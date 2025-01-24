@@ -135,16 +135,31 @@
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       }
     },
     "TSX": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       }
     },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       }
     }
   }
