@@ -68,12 +68,12 @@
       "settings": {
         "javascript": {
           "tsserver": {
-            "maxTsServerMemory": 16184
+            "maxTsServerMemory": 4096
           }
         },
         "typescript": {
           "tsserver": {
-            "maxTsServerMemory": 16184
+            "maxTsServerMemory": 4096
           },
           "inlayHints": {
             "parameterNames": {
