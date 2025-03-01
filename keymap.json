@@ -52,7 +52,7 @@
       "n": ["workspace::SendKeystrokes", "fn-1 z z z"],
       "N": ["workspace::SendKeystrokes", "fn-2 z z z"],
       // Open a vertical split
-      "|": "pane::SplitRight"
+      "space |": "pane::SplitRight"
     }
   },
   {
