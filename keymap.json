@@ -8,7 +8,7 @@
       "U": "vim::Redo",
       // LSP stuff
       "] d": "editor::GoToDiagnostic",
-      "[ d": "editor::GoToPrevDiagnostic",
+      "[ d": "editor::GoToPreviousDiagnostic",
       "g d": "editor::GoToDefinition",
       "g o:": "editor::GoToTypeDefinition",
       "g r": "editor::FindAllReferences",
@@ -22,7 +22,7 @@
       "space c v": "collab_panel::ToggleFocus",
       "space p c": "workspace::CloseAllDocks",
       "space f f": "file_finder::Toggle",
-      "space l g": "pane::DeploySearch",
+      "space s g": "pane::DeploySearch",
       "space o r": "projects::OpenRecent",
       // Managing tabs
       "space b c": "pane::CloseActiveItem",
@@ -48,7 +48,7 @@
       "x": ["workspace::SendKeystrokes", "ctrl-v x"],
       // Make it so jumping to next match centers on screen
       "fn-1": "vim::MoveToNextMatch",
-      "fn-2": "vim::MoveToPrevMatch",
+      "fn-2": "vim::MoveToPreviousMatch",
       "n": ["workspace::SendKeystrokes", "fn-1 z z z"],
       "N": ["workspace::SendKeystrokes", "fn-2 z z z"],
       // Open a vertical split
