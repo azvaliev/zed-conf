@@ -21,6 +21,16 @@
   "telemetry": {
     "diagnostics": false
   },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 2500,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": "warning"
+    }
+  },
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
