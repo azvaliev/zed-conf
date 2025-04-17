@@ -7,8 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "disabled_globs": [".env", ".env.*", ".gitignore"],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2",
+    "enabled": true,
+    "button": true
+  },
   "features": {
-    "inline_completions": false
+    "inline_completions": true
   },
   "buffer_font_family": "SFMono Nerd Font Mono",
   "auto_install_extensions": {
