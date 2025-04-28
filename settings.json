@@ -19,7 +19,7 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "o3"
     },
     "version": "2",
     "enabled": true,
@@ -42,7 +42,7 @@
   "diagnostics": {
     "include_warnings": true,
     "inline": {
-      "enabled": true,
+      "enabled": false,
       "update_debounce_ms": 2500,
       "padding": 4,
       "min_column": 0,
