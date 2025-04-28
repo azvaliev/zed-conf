@@ -79,5 +79,41 @@
       // Close project panel on escape
       "escape": "workspace::ToggleRightDock"
     }
+  },
+  // Keep tab normal behavior
+  // do not use tab for AI
+  {
+    "context": "(VimControl && !menu) || vim_mode == replace || vim_mode == waiting",
+    "bindings": {
+      "tab": "vim::Tab"
+    }
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "tab": ["vim::Literal", ["tab", "\u0009"]]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "tab": "editor::Tab",
+      "shift-tab": "editor::Backtab"
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ComposeCompletion"
+    }
+  },
+  // END: do not use tab for AI
+  {
+    "context": "Editor && edit_prediction",
+    "bindings": {
+      "tab": "editor::Tab",
+      "alt-tab": "editor::AcceptEditPrediction",
+      "ctrl-j": "editor::AcceptEditPrediction"
+    }
   }
 ]
