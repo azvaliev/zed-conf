@@ -112,8 +112,14 @@
     "context": "Editor && edit_prediction",
     "bindings": {
       "tab": "editor::Tab",
-      "alt-tab": "editor::AcceptEditPrediction",
-      "ctrl-j": "editor::AcceptEditPrediction"
+      "shift-tab": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction && edit_prediction_conflict",
+    "bindings": {
+      "tab": "editor::Tab",
+      "shift-tab": "editor::AcceptEditPrediction"
     }
   }
 ]
