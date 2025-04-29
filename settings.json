@@ -19,14 +19,15 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3"
+      "model": "gpt-4.1"
     },
     "version": "2",
     "enabled": true,
     "button": true
   },
   "features": {
-    "inline_completions": true
+    "inline_completions": true,
+    "edit_prediction_provider": "copilot"
   },
   "buffer_font_family": "SFMono Nerd Font Mono",
   "auto_install_extensions": {
