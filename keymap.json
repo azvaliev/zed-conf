@@ -18,7 +18,7 @@
       "space c a": "editor::ToggleCodeActions",
       "space t t": "diagnostics::Deploy",
       // Other windows
-      "space p v": "project_panel::ToggleFocus",
+      "space p v": "pane::RevealInProjectPanel",
       "space c v": "collab_panel::ToggleFocus",
       "space p c": "workspace::CloseAllDocks",
       "space f f": "file_finder::Toggle",
