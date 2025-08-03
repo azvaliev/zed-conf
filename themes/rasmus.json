@@ -37,6 +37,8 @@
         "editor.wrap_guide": "#323231",
         "editor.active_wrap_guide": "#3a3a39",
 
+        "editor.document_highlight.bracket_background": "#272726",
+
         "terminal.foreground": "#d1d1d1",
         "terminal.background": "#1a1a19",
         "terminal.bright_foreground": "#eaeaea",
@@ -89,12 +91,12 @@
           "comment": {
             "color": "#80807F",
             "font_style": "italic",
-            "font_weight": null
+            "font_weight": 200
           },
           "comment.doc": {
             "color": "#80807F",
             "font_style": "italic",
-            "font_weight": null
+            "font_weight": 200
           },
           "constant": {
             "color": "#7bb099",
@@ -167,9 +169,9 @@
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "#6a6a69",
+            "color": "#B6B6B5",
             "font_style": null,
-            "font_weight": null
+            "font_weight": 400
           },
           "punctuation.delimiter": {
             "color": "#6a6a69",
@@ -211,7 +213,12 @@
             "font_style": null,
             "font_weight": null
           }
-        }
+        },
+        "players": [
+          {
+            "cursor": "#AFB4AD"
+          }
+        ]
       }
     }
   ]
