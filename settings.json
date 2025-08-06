@@ -26,7 +26,7 @@
   },
   "features": {
     "inline_completions": true,
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "buffer_font_family": "SFMono Nerd Font",
   "auto_install_extensions": {
