@@ -35,7 +35,9 @@
       // Y should yank until the of the line
       "Y": ["workspace::SendKeystrokes", "y $"],
       // yy will yank the entire line, regardless of cursor position
-      "yy": ["workspace::SendKeystrokes", "y y"]
+      "yy": ["workspace::SendKeystrokes", "y y"],
+      // opens a git blame commit
+      "space g b": "editor::OpenGitBlameCommit"
     }
   },
   {
