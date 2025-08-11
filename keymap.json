@@ -31,7 +31,11 @@
       // Terminal
       "ctrl-t": "workspace::NewCenterTerminal",
       // DBUI
-      "space d b": ["task::Spawn", { "task_name": "Open DBUI" }]
+      "space d b": ["task::Spawn", { "task_name": "Open DBUI" }],
+      // Y should yank until the of the line
+      "Y": ["workspace::SendKeystrokes", "y $"],
+      // yy will yank the entire line, regardless of cursor position
+      "yy": ["workspace::SendKeystrokes", "y y"]
     }
   },
   {
