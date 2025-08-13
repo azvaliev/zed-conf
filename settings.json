@@ -200,5 +200,15 @@
         }
       }
     }
+  },
+  "file_types": {
+    "JSONC": [
+      "**/.zed/**/*.json",
+      "**/zed/**/*.json",
+      "**/Zed/**/*.json",
+      "**/.vscode/**/*.json",
+      "**/.swcrc"
+    ],
+    "Shell Script": [".env.*"]
   }
 }
