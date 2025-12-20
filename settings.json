@@ -12,32 +12,27 @@
     "mode": "eager",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5"
-    },
-    "enabled": true,
-    "button": true
+    "always_allow_tool_actions": true,
+    "model_parameters": [],
   },
   "features": {
-    "inline_completions": true,
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "buffer_font_family": "SFMono Nerd Font",
   "auto_install_extensions": {
     "html": true,
     "sql": true,
     "templ": true,
-    "poimandres": true
+    "poimandres": true,
   },
   "theme": "Rasmus Dark",
   "telemetry": {
-    "diagnostics": false
+    "diagnostics": false,
   },
   "diagnostics": {
     "include_warnings": true,
@@ -46,31 +41,30 @@
       "update_debounce_ms": 2500,
       "padding": 4,
       "min_column": 0,
-      "max_severity": "warning"
-    }
+      "max_severity": "warning",
+    },
   },
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 14,
   "buffer_line_height": "standard",
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "vertical_scroll_margin": 10,
   "use_smartcase_search": true,
   "vim": {
-    "use_multiline_find": true,
     "use_smartcase_find": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "project_panel": {
     "dock": "right",
-    "git_status": false
+    "git_status": false,
   },
   "tab_size": 2,
   "preview_tabs": {
-    "enable_preview_from_file_finder": false
+    "enable_preview_from_file_finder": false,
   },
   "inlay_hints": {
     "enabled": true,
@@ -78,127 +72,135 @@
     "show_parameter_hints": true,
     "show_other_hints": true,
     "edit_debounce_ms": 700,
-    "scroll_debounce_ms": 50
+    "scroll_debounce_ms": 50,
   },
   "git": {
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 4000
-    }
+      "delay_ms": 4000,
+    },
   },
   "lsp": {
+    "eslint": {
+      "settings": {
+        "onIgnoredFiles": "off",
+      },
+    },
+    "oxc": {
+      "initialization_options": {
+        "options": {
+          "run": "onType",
+          "configPath": null,
+          "tsConfigPath": null,
+          "unusedDisableDirectives": "allow",
+          "typeAware": true,
+          "flags": {},
+          "fmt": {
+            "experimental": true,
+          },
+        },
+      },
+    },
     "vtsls": {
       "experimental": {
         "completion": {
           "enableServerSideFuzzyMatch": true,
-          "entriesLimit": 100
-        }
+          "entriesLimit": 100,
+        },
       },
       "settings": {
         "javascript": {
           "tsserver": {
-            "maxTsServerMemory": 8192
-          }
+            "maxTsServerMemory": 8192,
+          },
         },
         "TSX": {
           "tsserver": {
-            "maxTsServerMemory": 8192
-          }
+            "maxTsServerMemory": 8192,
+          },
         },
         "typescript": {
           "tsserver": {
-            "maxTsServerMemory": 8192
+            "maxTsServerMemory": 8192,
           },
           "inlayHints": {
             "parameterNames": {
               "enabled": "all",
-              "suppressWhenArgumentMatchesName": false
+              "suppressWhenArgumentMatchesName": false,
             },
             "parameterTypes": {
-              "enabled": false
+              "enabled": false,
             },
             "variableTypes": {
               "enabled": false,
-              "suppressWhenTypeMatchesName": true
+              "suppressWhenTypeMatchesName": true,
             },
             "propertyDeclarationTypes": {
-              "enabled": true
+              "enabled": true,
             },
             "functionLikeReturnTypes": {
-              "enabled": false
+              "enabled": false,
             },
             "enumMemberValues": {
-              "enabled": true
-            }
+              "enabled": true,
+            },
           },
           "preferences": {
             "autoImportFileExcludePatterns": [
               "**/build/**",
               "**/out/**",
               "**/*.test.ts",
-              "**/*.spec.ts"
+              "**/*.spec.ts",
             ],
             "includeCompletionsForModuleExports": false,
             "includePackageJsonAutoImports": "off",
-            "preferTypeOnlyAutoImports": true
-          }
-        }
-      }
+            "preferTypeOnlyAutoImports": true,
+          },
+        },
+      },
     },
     "yaml-language-server": {
       "settings": {
         "yaml": {
           "format": {
-            "singleQuote": true
+            "singleQuote": true,
           },
           "customTags": [
             // For gitlab
-            "!reference sequence"
+            "!reference sequence",
           ],
           "schemas": {
             "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/refs/heads/main/schemas/v3.1/schema.yaml": [
               "openapi*.yml",
-              "openapi*.yaml"
+              "openapi*.yaml",
             ],
             "https://raw.githubusercontent.com/compose-spec/compose-spec/refs/heads/main/schema/compose-spec.json": [
               "docker-compose*.yml",
-              "docker-compose*.yaml"
-            ]
-          }
-        }
-      }
-    }
+              "docker-compose*.yaml",
+            ],
+          },
+        },
+      },
+    },
   },
   "languages": {
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
-      }
+      "formatter": ["prettier"],
     },
     "TSX": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
-      }
+      "formatter": ["prettier"],
     },
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
-        }
-      }
-    }
-  }
+      "formatter": ["prettier"],
+    },
+  },
 }
