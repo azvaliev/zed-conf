@@ -35,14 +35,14 @@
       // Y should yank until the of the line
       "Y": ["workspace::SendKeystrokes", "y $"],
       // yy will yank the entire line, regardless of cursor position
-      "yy": ["workspace::SendKeystrokes", "y y"]
-    }
+      "yy": ["workspace::SendKeystrokes", "y y"],
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-t": "workspace::NewCenterTerminal"
-    }
+      "ctrl-t": "workspace::NewCenterTerminal",
+    },
   },
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
@@ -56,8 +56,8 @@
       "n": ["workspace::SendKeystrokes", "fn-1 z z z"],
       "N": ["workspace::SendKeystrokes", "fn-2 z z z"],
       // Open a vertical split
-      "space |": "pane::SplitRight"
-    }
+      "space |": "pane::SplitRight",
+    },
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
@@ -67,63 +67,63 @@
       "J": "editor::MoveLineDown",
       "x": "editor::Cut",
       // Replace selection with paste, without copying the replaced content to clipboard
-      "space p": ["workspace::SendKeystrokes", "\" _ d h p"]
-    }
+      "space p": ["workspace::SendKeystrokes", "\" _ d h p"],
+    },
   },
   // Markdown preview
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      "space m d": "markdown::OpenPreviewToTheSide"
-    }
+      "space m d": "markdown::OpenPreviewToTheSide",
+    },
   },
   {
     "context": "ProjectPanel",
     "bindings": {
       // Close project panel on escape
-      "escape": "workspace::ToggleRightDock"
-    }
+      "escape": "workspace::ToggleRightDock",
+    },
   },
   // Keep tab normal behavior
   // do not use tab for AI
   {
     "context": "(VimControl && !menu) || vim_mode == replace || vim_mode == waiting",
     "bindings": {
-      "tab": "vim::Tab"
-    }
+      "tab": "vim::Tab",
+    },
   },
   {
     "context": "vim_mode == literal",
     "bindings": {
-      "tab": ["vim::Literal", ["tab", "\u0009"]]
-    }
+      "tab": ["vim::Literal", ["tab", "\u0009"]],
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "tab": "editor::Tab",
-      "shift-tab": "editor::Backtab"
-    }
+      "shift-tab": "editor::Backtab",
+    },
   },
   {
     "context": "Editor && showing_completions",
     "bindings": {
-      "tab": "editor::ComposeCompletion"
-    }
+      "tab": "editor::ComposeCompletion",
+    },
   },
   // END: do not use tab for AI
   {
     "context": "Editor && edit_prediction",
     "bindings": {
       "tab": "editor::Tab",
-      "shift-tab": "editor::AcceptEditPrediction"
-    }
+      "shift-tab": "editor::AcceptEditPrediction",
+    },
   },
   {
-    "context": "Editor && edit_prediction && edit_prediction_conflict",
+    "context": "Editor && edit_prediction_conflict",
     "bindings": {
       "tab": "editor::Tab",
-      "shift-tab": "editor::AcceptEditPrediction"
-    }
-  }
+      "shift-tab": "editor::AcceptEditPrediction",
+    },
+  },
 ]
