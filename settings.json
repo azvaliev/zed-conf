@@ -22,7 +22,11 @@
     "templ": true,
     "oxc": true,
   },
-  "theme": "GitHub Monochrome Dark",
+  "theme": {
+    "mode": "system",
+    "dark": "GitHub Monochrome Dark",
+    "light": "GitHub Monochrome Light",
+  },
   "telemetry": {
     "diagnostics": false,
   },
