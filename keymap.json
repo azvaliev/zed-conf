@@ -27,11 +27,9 @@
       // Managing tabs
       "space b c": "pane::CloseActiveItem",
       "space t n": "workspace::NewFile",
-      "space t o": "pane::CloseInactiveItems",
+      "space t o": "pane::CloseOtherItems",
       // Terminal
       "ctrl-t": "workspace::NewCenterTerminal",
-      // DBUI
-      "space d b": ["task::Spawn", { "task_name": "Open DBUI" }],
       // Y should yank until the of the line
       "Y": ["workspace::SendKeystrokes", "y $"],
       // yy will yank the entire line, regardless of cursor position
