@@ -40,6 +40,21 @@
       "max_severity": "warning",
     },
   },
+  "file_types": {
+    "JSONC": [
+      "**/.zed/**/*.json",
+      "**/zed/**/*.json",
+      "**/Zed/**/*.json",
+      "**/.vscode/**/*.json",
+
+      "**/project.json",
+      "**/tsconfig.json",
+
+      "**/.oxlintrc*.json",
+      "**/.eslintrc*.json"
+    ],
+    "Shell Script": [".env.*"]
+  },
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 14,
