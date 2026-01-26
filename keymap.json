@@ -21,10 +21,14 @@
       "space p v": "pane::RevealInProjectPanel",
       "space c v": "collab_panel::ToggleFocus",
       "space p c": "workspace::CloseAllDocks",
+      "space o r": "projects::OpenRecent",
+
+      // searching
       "space f f": "file_finder::Toggle",
+      "space f s": "project_symbols::Toggle",
       "space s g": "pane::DeploySearch",
       "space s r": ["pane::DeploySearch", { "replace_enabled": true }],
-      "space o r": "projects::OpenRecent",
+
       // Managing tabs
       "space b c": "pane::CloseActiveItem",
       "space t n": "workspace::NewFile",
