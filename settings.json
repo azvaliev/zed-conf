@@ -8,7 +8,11 @@
 // from the command palette or from `Zed` application menu.
 {
   "edit_predictions": {
-    "disabled_globs": [".env", ".env.*", ".gitignore"],
+    "disabled_globs": [
+      ".env",
+      ".env.*",
+      ".gitignore"
+    ],
     "mode": "eager",
     "copilot": {
       "proxy": null,
@@ -30,7 +34,7 @@
     "templ": true,
     "poimandres": true,
   },
-  "theme": "Rasmus Dark",
+  "theme": "GitHub Monochrome Dark",
   "telemetry": {
     "diagnostics": false,
   },
@@ -188,19 +192,25 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": ["prettier"],
+      "formatter": [
+        "prettier"
+      ],
     },
     "TSX": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": ["prettier"],
+      "formatter": [
+        "prettier"
+      ],
     },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": ["prettier"],
+      "formatter": [
+        "prettier"
+      ],
     },
   },
 }
