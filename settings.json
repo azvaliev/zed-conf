@@ -8,21 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
   "edit_predictions": {
-    "disabled_globs": [
-      ".env",
-      ".env.*",
-      ".gitignore"
-    ],
+    "disabled_globs": [".env", ".env.*", ".gitignore"],
     "mode": "eager",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null,
-    },
     "enabled_in_text_threads": false,
-  },
-  "agent": {
-    "always_allow_tool_actions": true,
-    "model_parameters": [],
   },
   "features": {
     "edit_prediction_provider": "zed",
@@ -32,7 +20,7 @@
     "html": true,
     "sql": true,
     "templ": true,
-    "poimandres": true,
+    "oxc": true,
   },
   "theme": "GitHub Monochrome Dark",
   "telemetry": {
@@ -90,7 +78,7 @@
         "onIgnoredFiles": "off",
       },
     },
-    "oxc": {
+    "oxlint": {
       "initialization_options": {
         "options": {
           "run": "onType",
@@ -98,27 +86,20 @@
           "tsConfigPath": null,
           "unusedDisableDirectives": "allow",
           "typeAware": true,
-          "flags": {},
-          "fmt": {
-            "experimental": true,
-          },
         },
       },
     },
     "vtsls": {
-      "experimental": {
-        "completion": {
-          "enableServerSideFuzzyMatch": true,
-          "entriesLimit": 100,
-        },
-      },
       "settings": {
-        "javascript": {
-          "tsserver": {
-            "maxTsServerMemory": 8192,
+        "$schema": "https://raw.githubusercontent.com/yioneko/vtsls/refs/heads/main/packages/service/configuration.schema.json",
+        "autoUseWorkspaceTsdk": true,
+        "experimental": {
+          "completion": {
+            "enableServerSideFuzzyMatch": true,
+            "entriesLimit": 100,
           },
         },
-        "TSX": {
+        "javascript": {
           "tsserver": {
             "maxTsServerMemory": 8192,
           },
@@ -192,25 +173,19 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
     },
     "TSX": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
     },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
     },
   },
 }
