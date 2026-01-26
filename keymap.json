@@ -23,6 +23,7 @@
       "space p c": "workspace::CloseAllDocks",
       "space f f": "file_finder::Toggle",
       "space s g": "pane::DeploySearch",
+      "space s r": ["pane::DeploySearch", { "replace_enabled": true }],
       "space o r": "projects::OpenRecent",
       // Managing tabs
       "space b c": "pane::CloseActiveItem",
