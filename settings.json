@@ -51,9 +51,9 @@
       "**/tsconfig.json",
 
       "**/.oxlintrc*.json",
-      "**/.eslintrc*.json"
+      "**/.eslintrc*.json",
     ],
-    "Shell Script": [".env.*"]
+    "Shell Script": [".env", ".env.*"],
   },
   "vim_mode": true,
   "ui_font_size": 14,
