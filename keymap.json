@@ -109,13 +109,6 @@
     },
   },
   {
-    "context": "Editor && showing_completions",
-    "bindings": {
-      "tab": "editor::ComposeCompletion",
-    },
-  },
-  // END: do not use tab for AI
-  {
     "context": "Editor && edit_prediction",
     "bindings": {
       "tab": "editor::Tab",
@@ -129,4 +122,24 @@
       "shift-tab": "editor::AcceptEditPrediction",
     },
   },
+  // Use tab for autocomplete
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ComposeCompletion",
+    },
+  },
+  {
+    "context": "Editor && edit_prediction_conflict && showing_completions",
+    "bindings": {
+      "tab": "editor::ComposeCompletion",
+    },
+  },
+  {
+    "context": "Editor && edit_prediction && showing_completions",
+    "bindings": {
+      "tab": "editor::ComposeCompletion",
+    },
+  },
+  // END: do not use tab for AI
 ]
