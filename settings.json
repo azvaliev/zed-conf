@@ -11,9 +11,7 @@
     "disabled_globs": [".env", ".env.*", ".gitignore"],
     "mode": "eager",
     "enabled_in_text_threads": false,
-  },
-  "features": {
-    "edit_prediction_provider": "zed",
+    "provider": "zed",
   },
   "buffer_font_family": "SFMono Nerd Font",
   "auto_install_extensions": {
@@ -181,6 +179,10 @@
             "https://raw.githubusercontent.com/compose-spec/compose-spec/refs/heads/main/schema/compose-spec.json": [
               "docker-compose*.yml",
               "docker-compose*.yaml",
+            ],
+            "https://taskfile.dev/schema.json": [
+              "taskfile*.yml",
+              "taskfile*.yaml",
             ],
           },
         },
